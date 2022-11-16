@@ -1,0 +1,14 @@
+name: security_on_tag
+
+on:  
+  push:
+    tags:
+      - '*'
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+#     - name: gitleaks-action
+#       uses: zricethezav/gitleaks-action@master

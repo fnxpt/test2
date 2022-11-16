@@ -1,4 +1,4 @@
-name: security_secrets
+name: security_on_pr
 
 on: [push,pull_request]
 

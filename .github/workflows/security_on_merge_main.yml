@@ -1,0 +1,15 @@
+name: security_on_merge_main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+#     DO SCAN
+#     - name: gitleaks-action
+#       uses: zricethezav/gitleaks-action@master
